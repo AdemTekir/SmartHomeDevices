@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartSoundFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutSmartSoundFragment"
+        android:background="@drawable/bg3">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextClock
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:format24Hour="hh:mm:ss"
+            android:text="Clock"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seekBarTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="27°"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@android:style/Widget.Material.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="#ffffff"
+            android:max="34"
+            android:min="15"
+            android:progress="16"
+            android:progressBackgroundTint="#ffffff"
+            android:progressTint="#ffffff"
+            android:thumbTint="#ffffff" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="Light"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="asd"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="asdf"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="asdfg"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:background="#ffffff"
+            android:text="asd"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:ems="20"
+            android:inputType="text"
+            android:hint="Mesaj"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/messageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:text="mesajı yolla"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDec"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="-"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnInc"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="+"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
